@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eye of Horus Guard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- ======Header area====== -->
+    <header class="space-grotesk">
+        <img src="icons/128.png" class="logo" alt="logo">
+        <h1>EoH Guard</h1>
+    </header>
+
+    <!-- ======Content sections====== -->
+
+    <!-- Home Section -->
+    <div id="home" class="tab-content active">
+        <h2>Site Details</h2>
+        <p><b>URL:</b> <span id="current-url">Loading...</span></p>
+        <p><b>Certificate:</b> <span id="certificate">Checking...</span></p>
+        <p><b>Region:</b> <span id="region">Detecting...</span></p>
+
+        <h3>Phishing Score</h3>
+        <div id="score-box">Score: <span id="phishing-score">0%</span></div>
+
+        <div id="phishing-alert" class="alert hidden">
+        🚨 Warning: This site might be phishing!
+        </div>
+
+        <h3>Reporter</h3>
+        <textarea id="report-text" placeholder="Describe the issue..."></textarea>
+        <button id="send-report">Send Report</button>
+    </div>
+
+    <!-- VPN Section -->
+    <div id="vpn" class="tab-content">
+        <h2>VPN</h2>
+        <p>Status: <span id="vpn-status">Disconnected</span></p>
+        <div style="display: none;" id="server-holder">Server: <span id="server"></span></div>
+        <button id="connect-vpn" class="vpn-button vpn-off">Connect</button>
+    </div>
+
+
+    <!-- Protection Section -->
+        <div id="protection" class="tab-content">
+            <h2 class="protection-title">Your Protection Overview</h2>
+            <div class="protection-stats">
+                <div class="protection-stat">
+                    <span class="stat-label">Sites Blocked (this session):</span>
+                    <span class="stat-value" id="sites-blocked-session">3</span>
+                </div>
+                <div class="protection-stat">
+                    <span class="stat-label">Sites Blocked (total):</span>
+                    <span class="stat-value" id="sites-blocked-total">27</span>
+                </div>
+                <div class="protection-stat">
+                    <span class="stat-label">Phishing Ads Blocked:</span>
+                    <span class="stat-value" id="phishing-ads-blocked">12</span>
+                </div>
+                <div class="protection-examples">
+                    <span class="stat-label">Recent Phishing Ads Blocked:</span>
+                    <ul class="protection-examples-list">
+                        <li>win-free-iphone.com</li>
+                        <li>bank-login-alert.net</li>
+                        <li>secure-update-paypal.com</li>
+                    </ul>
+                </div>
+                <div class="protection-stat">
+                    <span class="stat-label">Trackers Blocked:</span>
+                    <span class="stat-value" id="trackers-blocked">8</span>
+                </div>
+                <div class="protection-fp">
+                    <span class="stat-label">Fingerprint Protection:</span>
+                    <span class="stat-value" id="fp-status">ON</span>
+                    <div class="fp-details">
+                        <ul>
+                            <li>Blocked canvas fingerprinting</li>
+                            <li>Blocked WebGL fingerprinting</li>
+                            <li>Blocked font enumeration</li>
+                            <li>Blocked device info leaks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Tips Section -->
+    <div id="tips" class="tab-content">
+        <h2 class="space-grotesk tips-title">Phishing Protection Tips</h2>
+        <div class="tips-list">
+            <div class="tip-card gradient-card">
+                <b>Check the domain carefully</b><br>
+                <span class="tip-example">Example: <b>faceb00k.com</b> ≠ facebook.com</span>
+            </div>
+            <div class="tip-card dark-card">
+                <b>Look for HTTPS and valid certificate</b><br>
+                <span class="tip-example">Example: <b>http://</b> is not secure</span>
+            </div>
+            <div class="tip-card blue-card">
+                <b>Beware of urgent messages</b><br>
+                <span class="tip-example">"Your account will be closed in 24 hours!"</span>
+            </div>
+            <div class="tip-card dark-card">
+                <b>Do not click suspicious links</b><br>
+                <span class="tip-example">Hover to preview before clicking</span>
+            </div>
+            <div class="tip-card gradient-card">
+                <b>Report suspicious sites</b><br>
+                <span class="tip-example">Use the extension's report feature</span>
+            </div>
+            <div class="tip-card dark-card">
+                <b>Check for spelling mistakes and poor grammar</b><br>
+                <span class="tip-example">Example: "verfy your acount"</span>
+            </div>
+            <div class="tip-card blue-card">
+                <b>Be cautious of requests for personal info</b><br>
+                <span class="tip-example">Legitimate sites rarely ask for passwords via email</span>
+            </div>
+            <div class="tip-card dark-card">
+                <b>Watch for popups and excessive ads</b><br>
+                <span class="tip-example">Phishing sites often use popups to trick you</span>
+            </div>
+            <div class="tip-card gradient-card">
+                <b>Check sender email addresses</b><br>
+                <span class="tip-example">Example: <b>support@paypa1.com</b> ≠ PayPal</span>
+            </div>
+            <div class="tip-card dark-card">
+                <b>Never download attachments from unknown sources</b>
+            </div>
+            <div class="tip-card blue-card">
+                <b>If in doubt, search for the site or contact support directly</b>
+            </div>
+            <div class="tip-card dark-card">
+                <b>Use multi-factor authentication for extra security</b>
+            </div>
+            <div class="tip-card gradient-card">
+                <b>Keep your browser and extension updated</b>
+            </div>
+            <div class="tip-card dark-card">
+                <b>Check for mismatched URLs in emails and messages</b>
+            </div>
+            <div class="tip-card blue-card">
+                <b>If a deal looks too good to be true, it probably is</b>
+            </div>
+        </div>
+        <div class="tips-examples">
+            <h3 class="space-grotesk tips-examples-title">Phishing Examples</h3>
+            <ul>
+                <li><b>faceb00k.com</b> (fake Facebook)</li>
+                <li><b>paypa1.com</b> (fake PayPal)</li>
+                <li><b>secure-login-update.com</b> (suspicious keywords)</li>
+                <li><b>http://yourbank-login.com</b> (no HTTPS)</li>
+                <li><b>account-verfy.net</b> (spelling mistake)</li>
+            </ul>
+            <p class="tips-examples-note">Always double-check before entering any sensitive information!</p>
+        </div>
+    </div>
+
+    <!-- Settings Section -->
+    <div id="settings" class="tab-content">
+    <h2>Settings</h2>
+
+    <div class="setting-item">
+        <label for="language">Language</label>
+        <select id="language" class="select-language">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">French</option>
+        </select>
+    </div>
+    <div class="setting-item">
+        <span>Connect VPN automatically</span>
+        <label class="switch">
+        <input type="checkbox" id="auto-vpn">
+        <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="setting-item">
+        <span>Block ads</span>
+        <label class="switch">
+        <input type="checkbox" id="block-ads">
+        <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="setting-item">
+        <span>Show phishing alerts</span>
+        <label class="switch">
+        <input type="checkbox" id="show-alerts">
+        <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="setting-item">
+        <span>Fingerprint protection</span>
+        <label class="switch">
+        <input type="checkbox" id="fingerprint-protect" checked>
+        <span class="slider round"></span>
+        </label>
+    </div>
+
+    <h3>About</h3>
+    <p>EoH Guard - Protecting you online.</p>
+    <p><i class="fas fa-globe about-icons"></i> <a href="https://phish-simulator.netlify.app/" target="_blank">Our Website</a></p>
+    <p><i class="fa-brands fa-facebook about-icons"></i> <a href="https://facebook.com" target="_blank">Facebook</a></p>
+    <p><i class="fa-brands fa-twitter about-icons"></i> <a href="https://twitter.com" target="_blank">Twitter</a></p>
+
+    <h3>Terms & Privacy</h3>
+    <a href="https://phish-simulator.netlify.app/">Terms of service</a><br>
+    <a href="https://phish-simulator.netlify.app/">Privacy Policy</a>
+    </div>
+
+    <!-- ======Tabs Section======-->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="home"><i class="fas fa-home"></i> Home</button>
+        <button class="tab-btn" data-tab="vpn"><i class="fas fa-globe"></i> VPN</button>
+        <button class="tab-btn" data-tab="protection"><i class="fas fa-shield-alt"></i> Protection</button>
+        <button class="tab-btn" data-tab="tips"><i class="fas fa-book"></i> Tips</button>
+        <button class="tab-btn" data-tab="settings"><i class="fas fa-cog"></i> Settings</button>
+    </div>
+
+  <script src="content.js"></script>
+</body>
+</html>
